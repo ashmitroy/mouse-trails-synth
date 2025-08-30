@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mouse Trails Synth</title>
+  <style>
+    html,body {
+      margin:0;
+      height:100%;
+      background:#0f1117;
+      color:#eaeefb;
+      font-family:system-ui;
+    }
+
+    /* ✅ Add these rules here */
+    .hint {
+      position:fixed;
+      left:12px;
+      top:10px;
+      font-size:14px;
+      opacity:.85;
+      pointer-events:none; /* ensures text doesn't block mouse input */
+    }
+ .hint{ pointer-events:none; }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.min.js"></script>
+</head>
+
+<body>
+  <div class="hint">Move mouse: trails • Click: toggle pulse • Keys 1/2/3: color modes</div>
+  <script src="sketch.js"></script>
+</body>
+</html>
